@@ -1,8 +1,8 @@
 express = require("express")
 //Include react transpiler
 react = require("express-react-views")
-server = express()
 
+server = express()
 
 server.engine("jsx", react.createEngine())
 server.set("view engine", "jsx")
@@ -20,3 +20,9 @@ server.get("/", (req, resp) => {
 
 
 server.listen(3000)
+
+
+//Live reload server for development
+livereload = require("livereload")
+liveserver = livereload.createServer()
+liveserver.watch(__dirname + "/components")
