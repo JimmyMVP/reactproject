@@ -23,6 +23,7 @@ server.listen(3000)
 
 
 //Live reload server for development
+console.log("Starting livereload for " + __dirname)
 livereload = require("livereload")
-liveserver = livereload.createServer()
+liveserver = livereload.createServer({exts: ["jsx", "html", "css", "sass", "js"]})
 liveserver.watch(__dirname + "/components")
