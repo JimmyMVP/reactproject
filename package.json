@@ -13,6 +13,7 @@
     "express-hbs": "^1.0.1",
     "express-react-views": "^0.10.2",
     "node-jsx": "^0.13.3",
+    "node-sass-middleware": "^0.9.8",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
@@ -22,6 +23,8 @@
     "babel-preset-react": "^6.5.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "livereload": "^0.4.1"
+    "livereload": "^0.4.1",
+    "radium": "^0.17.1",
+    "react-bootstrap": "^0.29.5"
   }
 }

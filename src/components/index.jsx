@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import DefaultButton from "./Button"
+
+
 
 export default class Index extends React.Component {
 
@@ -7,8 +10,9 @@ export default class Index extends React.Component {
 
 		return(
 				<div>
-				<h1>Hello From React!</h1>
+				<h1 className="heading">Hello From React!</h1>
 				<div>Finally managed to get livereload to work</div>
+				<DefaultButton></DefaultButton>
 				</div>
 			);
 
